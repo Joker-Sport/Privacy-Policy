@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="سياسة الخصوصية لتطبيق الجوكر سبورت - تطبيق جدول المباريات الرياضية">
+    <meta name="keywords" content="جوكر سبورت, سياسة الخصوصية, أمان البيانات">
+    <title>سياسة الخصوصية - تطبيق الجوكر سبورت</title>
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAdgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAOJSURBVFiFtZdNiE1RGMd/58y8mZnXvJlhZsxkQWFhQbKwsLGwsLCwsLGwsLGwsLCwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGwsLGw==">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            overflow: hidden;
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.05) 10px,
+                rgba(255,255,255,0.05) 20px
+            );
+            animation: slide 20s linear infinite;
+        }
+        
+        @keyframes slide {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .last-updated {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            border: 3px solid #ff6b9d;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border-right: 6px solid #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .highlight:hover {
+            transform: translateX(-5px);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin: 40px 0 20px 0;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #764ba2;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-right: 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+            padding: 8px 0;
+            border-bottom: 1px dotted #ddd;
+            transition: background 0.3s ease;
+        }
+        
+        li:hover {
+            background: rgba(102, 126, 234, 0.05);
+            padding-right: 10px;
+            border-radius: 5px;
+        }
+        
+        .security-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 10px 5px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .security-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .contact {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact::before {
+            content: '📧';
+            font-size: 3em;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            opacity: 0.1;
+        }
+        
+        .contact h2 {
+            color: white;
+            border-bottom: 3px solid white;
+            margin-top: 0;
+        }
+        
+        .footer {
+            background: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            color: #7f8c8d;
+            border-top: 3px solid #667eea;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+            margin: 0 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+        
+        /* تحسينات للطباعة */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            
+            .container {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            .header {
+                background: #f8f9fa !important;
+                color: black !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛡️ سياسة الخصوصية</h1>
+            <div class="subtitle">تطبيق الجوكر سبورت - حماية خصوصيتك أولويتنا</div>
+        </div>
+        
+        <div class="content">
+            <div class="last-updated">
+                <strong>📅 آخر تحديث: 27 مايو 2025</strong>
+                <br>
+                <small>نسخة 1.3.4 - محدثة للامتثال مع متطلبات Google Play Store و iOS</small>
+            </div>
+
+            <div class="highlight">
+                <strong>🔒 ملخص الخصوصية:</strong> 
+                تطبيق الجوكر سبورت يحترم خصوصيتك بالكامل. نحن لا نجمع أو نشارك معلوماتك الشخصية مع أي طرف ثالث. جميع البيانات محمية بتشفير متقدم ومخزنة محلياً على جهازك.
+            </div>
+
+            <h2>🔍 نظرة عامة</h2>
+            <p>مرحباً بك في تطبيق الجوكر سبورت. هذه السياسة تشرح كيف نتعامل مع بياناتك وخصوصيتك عند استخدام تطبيقنا. نحن ملتزمون بحماية خصوصيتك وضمان أمان بياناتك.</p>
+
+            <h2>📊 المعلومات التي نجمعها</h2>
+            <p>نجمع الحد الأدنى من المعلومات اللازمة لتشغيل التطبيق بكفاءة:</p>
+            
+
+            <h2>🚫 المعلومات التي لا نجمعها أبداً</h2>
+            <div class="highlight">
+                <strong>نحن لا نجمع هذه المعلومات نهائياً:</strong>
+                <ul>
+                    <li>❌ الاسم الحقيقي أو المعلومات الشخصية</li>
+                    <li>❌ عنوان البريد الإلكتروني أو أرقام الهواتف</li>
+                    <li>❌ الموقع الجغرافي أو بيانات GPS</li>
+                    <li>❌ جهات الاتصال أو الصور الشخصية</li>
+                    <li>❌ كلمات المرور أو المعلومات المصرفية</li>
+                </ul>
+            </div>
+
+            <h2>🤝 مشاركة المعلومات</h2>
+            <p><strong>نحن لا نبيع أو نشارك معلوماتك مع أطراف ثالثة</strong> باستثناء الحالات التالية المحدودة:</p>
+            <ul>
+                <li><strong>Firebase Analytics:</strong> إحصائيات مجهولة الهوية فقط لتحسين التطبيق</li>
+                <li><strong>Google AdMob:</strong> عرض إعلانات مناسبة (بدون كشف هويتك)</li>
+            </ul>
+
+            <h2>📱 إعلانات Google AdMob</h2>
+            <p>التطبيق يعرض إعلانات لدعم التطوير المستمر:</p>
+            <ul>
+                <li>لا نشارك معلوماتك الشخصية مع المعلنين</li>
+                <li>الإعلانات لا تتداخل مع تجربة المستخدم</li>
+            </ul>
+
+            <h2>⚖️ حقوقك كمستخدم</h2>
+            <div class="highlight">
+                <strong>حقوقك محفوظة دائماً:</strong>
+                <ul>
+                    <li><span class="emoji">👁️</span> <strong>الشفافية:</strong> معرفة ما نجمعه بالضبط</li>
+                    <li><span class="emoji">🗑️</span> <strong>الحذف:</strong> إزالة جميع البيانات بإلغاء التثبيت</li>
+                    <li><span class="emoji">⚙️</span> <strong>التحكم:</strong> إدارة الإعدادات والصلاحيات</li>
+                    <li><span class="emoji">📧</span> <strong>التواصل:</strong> طرح الأسئلة والاستفسارات</li>
+                    <li><span class="emoji">🔒</span> <strong>الخصوصية:</strong> حماية كاملة للمعلومات</li>
+                </ul>
+            </div>
+
+            <h2>💾 التخزين المحلي</h2>
+            <p>معظم بيانات التطبيق مخزنة محلياً على جهازك ولا تُرسل لخوادمنا:</p>
+            <ul>
+                <li>إعدادات التطبيق وتفضيلات المستخدم</li>
+                <li>قائمة الفرق والبطولات المفضلة</li>
+                <li>إعدادات الاشعارات والسمة</li>
+            </ul>
+
+            <h2>👶 حماية الأطفال</h2>
+            <p>التطبيق مناسب لجميع الأعمار مع حماية خاصة للأطفال:</p>
+            <ul>
+                <li>لا نجمع معلومات من الأطفال</li>
+                <li>المحتوى عائلي ومناسب لجميع الأعمار</li>
+                <li>لا توجد ميزات تفاعل اجتماعي</li>
+            </ul>
+
+            <h2>🔄 تحديثات السياسة</h2>
+            <p>نحن نطور سياستنا باستمرار لضمان حمايتك:</p>
+            <ul>
+                <li>سيتم إشعارك بأي تغييرات مهمة عبر التطبيق</li>
+                <li>التحديثات البسيطة ستُنشر هنا مباشرة</li>
+                <li>يمكنك مراجعة السياسة في أي وقت</li>
+                <li>استمرار الاستخدام يعني موافقتك على التحديثات</li>
+            </ul>
+
+            <h2>🌍 الامتثال الدولي</h2>
+            <p>نلتزم بالقوانين والمعايير الدولية:</p>
+            <div class="highlight">
+                <ul>
+                    <li><strong>GDPR (أوروبا):</strong> حماية البيانات الشخصية</li>
+                    <li><strong>COPPA (أمريكا):</strong> حماية خصوصية الأطفال</li>
+                    <li><strong>Google Play Policy:</strong> معايير متجر Google</li>
+                    <li><strong>القوانين المحلية:</strong> الامتثال للقوانين في بلدك</li>
+                </ul>
+            </div>
+
+        
+        <div class="footer">
+            <p>© 2025 الجوكر سبورت - جميع الحقوق محفوظة</p>
+            <p>تطبيق آمن وموثوق لمحبي الرياضة <span class="emoji">⚽🏀🎾</span></p>
+        </div>
+    </div>
+</body>
+</html>
